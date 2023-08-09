@@ -1,0 +1,150 @@
+.header {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.logodiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headerlist {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    color: white;
+}
+
+.headerlist a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Poppins;
+    
+}
+
+.headerlist li {
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.headerlogo {
+    width: 150px;
+    height: auto;
+}
+
+
+.nav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
+
+.burgermenu {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height:auto;
+
+}
+
+
+.burgermenu {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 20px; 
+  }
+  
+  .burgermenu_line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    margin: 5px 0 5 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .burgermenu_line:nth-child(2) {
+    margin-left: 0;
+  }
+  
+@media screen and (max-width: 768px) {
+
+    .headerlist {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+      z-index: 999;
+    }
+  
+    .headerlist li {
+      display: block;
+      margin: 10px 0;
+    
+    }
+  
+    .burgermenu {
+      display: block;
+      background-color:#FFB842;
+      padding: 5px 5px 5px 5px;
+    }
+  
+    .burgermenu_line:nth-child(1) {
+      width: 100%;
+      margin: 5px 0 5px 0;
+    }
+  
+    .burgermenu_line:nth-child(2) {
+      opacity: 1;
+      width: 90%;
+      margin: 5px 0 5px 0;
+    }
+  
+    .burgermenu_line:nth-child(3) {
+      opacity: 1;
+      width: 70%;
+      margin: 5px 0 5px 0;
+    }
+
+    .headerlogo {
+        width: 100px;
+        height: auto;
+    }
+  
+      
+  }
