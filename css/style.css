@@ -1,0 +1,68 @@
+
+
+/* Style for the hero section */
+.hero {
+    background-image: url('../img/scott-webb-102825-overlay.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0; /* Adjust as needed */
+    height: 40vh;
+   
+}
+
+/* Style for the hero content */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; 
+    z-index: 1; 
+}
+
+/* Style for the hero title */
+.hero-title {
+    font-size: 60px;
+    font-family: Inter;
+    margin-bottom: 30px;
+}
+
+/* Style for the hero buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for the Learn More button */
+.learn-more-button {
+    background-color: #FF494B; /* Yellow color */
+    color: #fff;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+/* Style for the Get Started button */
+.get-started-button {
+    background-color: #00F0AC; /* Blue color */
+    color: #fff;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+.hero-button {
+    padding: 15px 30px;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}

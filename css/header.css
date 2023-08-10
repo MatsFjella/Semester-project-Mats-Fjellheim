@@ -30,7 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Poppins;
+    font-family: Inter;
     color: white;
 }
 
@@ -39,7 +39,7 @@
     color: #000;
     font-size: 18px;
     font-weight: 500;
-    font-family: Poppins;
+    font-family: Inter;
     
 }
 
