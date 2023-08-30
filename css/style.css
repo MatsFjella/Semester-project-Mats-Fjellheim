@@ -1,12 +1,34 @@
 
 /*Hero section */
 .hero {
-    background-image: url('../img/scott-webb-102825-overlay.jpg'); /* Set your background image */
+    background-image: url('../img/scott-webb-102825-overlay.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 150px 0; /* Adjust as needed */
+    padding: 150px 0;
+    height: 40vh;
+   
+}
+
+.hero-explore-page {
+    background-image: url('../img/andrew-ruiz-348421.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    height: 40vh;
+   
+} 
+
+.hero-exhibition-page {
+    background-image: url('../img/scientific-2040795_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
     height: 40vh;
    
 }
@@ -52,6 +74,7 @@
     border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
+    font-family: Inter;
 }
 
 @media (max-width: 768px) {
@@ -62,51 +85,369 @@
 
 /* End of hero section */
 
-/* Image left and content right section */
+/* Wiidth and center the image section with text on side */
 
-/* Style for the content section */
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .content-section {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0; /* Adjust padding as needed */
+    align-items: center;
+    padding: 50px 0; 
+    width: 60%;
 }
 
-/* Style for each column */
+
 .column {
     width: 50%;
-    padding: 0 20px; /* Add some spacing between columns */
+    padding: 0 20px; 
 }
 
-/* Style for the image */
+
 .column img {
     max-width: 100%;
     height: auto;
+    border-radius: 25px;
 }
 
-/* Style for the content in the right column */
+
 .column h2 {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 15px;
+    font-family: Inter;
 }
 
 .column p {
     font-size: 16px;
     margin-bottom: 20px;
+    font-family: Inter;
 }
 
-/* Style for the content button */
+
 .content-button {
     padding: 10px 20px;
-    background-color: #3498db; /* Blue color */
+    background-color: #FF494B; 
     color: #fff;
     border: none;
     border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    font-family: Inter;
 }
 
-/* ... your existing CSS code ... */
+.content-button-yellow { 
+    padding: 10px 20px;
+    background-color: #FFB842; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.content-button-green { 
+    padding: 10px 20px;
+    background-color: #00F0AC; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.content-section.reversed {
+    flex-direction: row-reverse;
+}
 
 
+/* responsive for content section */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+   
+    }
+
+    .column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .column img {
+        border-radius: 25; /* Remove border radius on small screens */
+    }
+    
+    .column h2 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        text-align: left;
+    }
+
+    .column p {
+        text-align: left;
+    }
+
+    .button-container {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start; /* Align button to the left */
+    }
+
+    .content-button {
+        width: 50%;
+        margin-top: auto; /* Push the button to the bottom */
+       
+    }
+}
+
+
+/* Responsive verison of the reversed version */
+@media (max-width: 768px) {
+    .content-section.reversed {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-section.reversed .column {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-section.reversed .column img {
+        border-radius: 25; 
+    }
+
+    .content-section.reversed .column h2 {
+        font-size: 32px; 
+        text-align: left; 
+    }
+
+    .content-section.reversed .column p {
+        font-size: 14px; 
+        text-align: left; 
+    }
+
+    .content-section.reversed .button-container {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start; 
+    }
+
+    .content-section.reversed .content-button {
+        background-color: #FF494B;
+        color: #fff;
+        font-size: 14px;
+        border: none;
+        border-radius: 25px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
+
+.overlay-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.overlay-section {
+    position: relative;
+    width: 60%;
+    height: 400px; 
+    height: 50vh;
+    background-image: url('../img/people-219985_1280.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.overlay-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-family: Inter;
+    width: 50%;
+}
+
+.overlay-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: Inter;
+}
+
+.overlay-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .overlay-section-container {
+        display:none;
+    }
+
+    
+}
+
+.overlay-content-container {
+    display:none;
+}
+
+@media (max-width: 768px) {
+
+    .overlay-content-container {
+        display:block;
+    }
+
+
+    .overlay-content-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+   
+    }
+
+    .overlay-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .overlay-column img {
+        border-radius: 25; /* Remove border radius on small screens */
+        max-width: 100%;
+    }
+    
+    .overlay-column h2 {
+        font-size: 32px; /* Adjust font size for smaller screens */
+        text-align: left;
+        font-family: Inter;
+    }
+
+    .overlay-column p {
+        text-align: left;
+        font-family: Inter;
+    }
+
+    
+
+    
+}
+
+
+
+
+
+/* Footer settings */
+.footer {
+    padding: 50px 0;
+    background-color: #FFB842;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-column img {
+    max-width: 100%;
+    width: 35%;
+    height: auto;
+}
+
+.footer-column h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    font-family: Inter;
+}
+
+.footer-list li {
+    margin-bottom: 8px;
+    font-family: Inter;
+}
+
+.footer p {
+    font-family: Inter;
+}
+
+.footer-list a {
+    color: #000;
+    text-decoration: underline;
+    font-family: Inter;
+}
+
+.footer-images {
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+
+.footer-images img {
+    max-width: 30%;
+    margin: 0 10px;
+}
+
+
+/* Responsive footer settings */
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-images img {
+        width: 100%;
+        margin: 0;
+        padding: 25px;
+    }
+}
 
 
