@@ -155,6 +155,25 @@
     font-family: Inter;
 }
 
+.column h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column h4 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column h5 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+
 .column p {
     font-size: 16px;
     margin-bottom: 20px;
@@ -224,6 +243,22 @@
         text-align: left;
     }
 
+    .column h3 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .column h4 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .column h5 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+  
     .column p {
         text-align: left;
     }
@@ -333,6 +368,23 @@
     font-family: Inter;
 }
 
+.overlay-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: Inter;
+}
+
+.overlay-content h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: Inter;
+}
+
+.overlay-content h5 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: Inter;
+}
 .overlay-content p {
     font-size: 16px;
     margin-bottom: 0;
@@ -517,6 +569,24 @@
     font-family: Inter;
 }
 
+.column-events h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-events h4 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-events h5 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
 .column-events p {
     font-size: 16px;
     font-family: Inter;
@@ -601,6 +671,24 @@
 }
 
 .column-visit h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-visit h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-visit h4 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-visit h5 {
     font-size: 32px;
     margin-bottom: 15px;
     font-family: Inter;
