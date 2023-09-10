@@ -33,6 +33,39 @@
    
 }
 
+.hero-events-page {
+    background-image: url('../img/genoa-956405_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    height: 40vh;
+   
+}
+
+.hero-visit-page {
+    background-image: url('../img/roberto-nickson-396152.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    height: 40vh;
+   
+}
+
+.hero-getinvolved-page {
+    background-image: url('../img/exhibition-1863344_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+    height: 40vh;
+   
+}
+
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
@@ -167,7 +200,7 @@
 }
 
 
-/* responsive for content section */
+/* responsives for content section */
 @media (max-width: 768px) {
     .content-section {
         flex-direction: column;
@@ -183,11 +216,11 @@
     }
 
     .column img {
-        border-radius: 25; /* Remove border radius on small screens */
+        border-radius: 25; 
     }
     
     .column h2 {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px;
         text-align: left;
     }
 
@@ -198,12 +231,12 @@
     .button-container {
         display: flex;
         width: 100%;
-        justify-content: flex-start; /* Align button to the left */
+        justify-content: flex-start; 
     }
 
     .content-button {
         width: 50%;
-        margin-top: auto; /* Push the button to the bottom */
+        margin-top: auto; 
        
     }
 }
@@ -305,7 +338,7 @@
     margin-bottom: 0;
 }
 
-/* Media queries for responsiveness */
+/* Media queries for responsivness */
 @media (max-width: 768px) {
     .overlay-section-container {
         display:none;
@@ -339,12 +372,12 @@
     }
 
     .overlay-column img {
-        border-radius: 25; /* Remove border radius on small screens */
+        border-radius: 25; 
         max-width: 100%;
     }
     
     .overlay-column h2 {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px; 
         text-align: left;
         font-family: Inter;
     }
@@ -451,3 +484,140 @@
 }
 
 
+/* events page */
+
+.content-container-events {
+    max-width: 60%; /* Set the maximum width to 60% of the parent container */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px;
+}
+
+.content-section-events {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+}
+
+.column-events {
+    width: 100%;
+    padding: 20px;
+}
+
+.column-events img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.column-events h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-events p {
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: 15px;
+}
+
+.button-container-events {
+    display: flex;
+    justify-content: flex-start; /* Align the button to the left */
+}
+
+.content-button-events-yellow {
+    background-color: #FFB842;
+    font-family: Inter;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content-button-events-green {
+    background-color: #00F0AC;
+    font-family: Inter;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content-button-events-red {
+    background-color: #FF494B;
+    font-family: Inter;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .content-container-events {
+        max-width: 90%; 
+    }
+    
+    .content-section-events {
+        align-items: center;
+    }
+}
+
+
+/* Visit page */
+
+.content-container-visit {
+    max-width: 60%; /* Set the maximum width to 60% of the parent container */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px;
+}
+
+.content-section-visit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left;
+}
+
+.column-visit {
+    width: 100%;
+    padding: 0;
+}
+
+.column-visit img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.column-visit h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-family: Inter;
+}
+
+.column-visit p {
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .content-container-visit {
+        max-width: 90%; 
+    }
+    
+    .content-section-visit {
+        align-items: center;
+    }
+}
