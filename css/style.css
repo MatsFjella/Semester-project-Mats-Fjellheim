@@ -539,15 +539,15 @@
 /* events page */
 
 .content-container-events {
-    max-width: 60%; /* Set the maximum width to 60% of the parent container */
-    margin: 0 auto; /* Center the section horizontally */
+    max-width: 60%; /
+    margin: 0 auto; 
     padding: 20px;
 }
 
 .content-section-events {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start; 
     text-align: left;
 }
 
@@ -595,7 +595,7 @@
 
 .button-container-events {
     display: flex;
-    justify-content: flex-start; /* Align the button to the left */
+    justify-content: flex-start; 
 }
 
 .content-button-events-yellow {
@@ -646,15 +646,15 @@
 /* Visit page */
 
 .content-container-visit {
-    max-width: 60%; /* Set the maximum width to 60% of the parent container */
-    margin: 0 auto; /* Center the section horizontally */
+    max-width: 60%; 
+    margin: 0 auto; 
     padding: 20px;
 }
 
 .content-section-visit {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
+    align-items: flex-start;
     text-align: left;
 }
 
